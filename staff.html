@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Staff Maintenance Requests</title>
+    <link rel="stylesheet" href="P3styles.css"> 
+</head>
+<body>
+    <h1>Staff - Maintenance Requests</h1>
+
+    <!-- Filter Section -->
+    <section>
+        <h2>Filter Requests</h2>
+        <input type="text" id="filterApartmentNumber" placeholder="Apartment Number">
+        <select id="filterProblemArea">
+            <option value="">Select Area</option>
+            <option value="Kitchen">Kitchen</option>
+            <option value="Bathroom">Bathroom</option>
+            <option value="Bedroom">Bedroom</option>
+            <!-- Add other areas as needed -->
+        </select>
+        <input type="date" id="filterStartDate">
+        <input type="date" id="filterEndDate">
+        <select id="filterStatus">
+            <option value="">Select Status</option>
+            <option value="pending">Pending</option>
+            <option value="completed">Completed</option>
+        </select>
+        <button id="applyFiltersBtn">Apply Filters</button>
+    </section>
+
+  <!-- Requests Table -->
+<table id="requestsTable">
+    <thead>
+        <tr>
+            <th>Request ID</th>
+            <th>Apartment Number</th>
+            <th>Problem Area</th>
+            <th>Description</th>
+            <th>Date</th> <!-- New column for the date -->
+            <th>Status</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        <!-- Requests will be populated here -->
+    </tbody>
+</table>
+<button class="home-button" onclick="window.location.href='loginP3.html'">Home</button>
+    <script src="P3scripts.js" type="module" defer></script>
+</body>
+</html>
