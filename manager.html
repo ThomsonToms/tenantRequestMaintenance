@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manager Dashboard</title>
+    <link rel="stylesheet" href="P3styles.css">
+</head>
+<body>
+    <h1>Manager Dashboard</h1>
+
+    <!-- Add Tenant Form -->
+    <section>
+        <h2>Add Tenant</h2>
+        <form id="addTenantForm">
+            <input type="text" id="tenantID" placeholder="Tenant ID" required>
+            <input type="text" id="tenantName" placeholder="Name" required>
+            <input type="tel" id="tenantPhone" placeholder="Phone Number" required>
+            <input type="email" id="tenantEmail" placeholder="Email" required>
+            <input type="date" id="checkInDate" required>
+            <input type="date" id="checkOutDate">
+            <input type="text" id="apartmentNumber" placeholder="Apartment Number" required>
+            <button type="submit">Add Tenant</button>
+        </form>
+    </section>
+
+    <!-- Move Tenant Form -->
+    <section>
+        <h2>Move Tenant</h2>
+        <form id="moveTenantForm">
+            <input type="text" id="moveTenantID" placeholder="Tenant ID" required>
+            <input type="text" id="newApartmentNumber" placeholder="New Apartment Number" required>
+            <button type="submit">Move Tenant</button>
+        </form>
+    </section>
+
+    <!-- Delete Tenant -->
+    <section>
+        <h2>Delete Tenant</h2>
+        <form id="deleteTenantForm">
+            <input type="text" id="deleteTenantID" placeholder="Tenant ID" required>
+            <button type="submit">Delete Tenant</button>
+        </form>
+    </section>
+    <button class="home-button" onclick="window.location.href='loginP3.html'">Home</button>
+    
+
+    <script src="P3scripts.js" type="module" defer></script>
+</body>
+</html>
