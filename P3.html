@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tenant Maintenance Request</title>
+    <link rel="stylesheet" href="tmain.css"> 
+</head>
+<body>
+    <h1>Tenant Maintenance Request Form</h1>
+    <form id="maintenanceRequestForm">
+        <label for="apartmentNumber">Apartment Number:</label>
+        <input type="text" id="apartmentNumber" name="apartmentNumber" required readonly>
+
+        <label for="problemArea">Problem Area:</label>
+        <select id="problemArea" name="problemArea">
+            <option value="Kitchen">Kitchen</option>
+            <option value="Bathroom">Bathroom</option>
+            <option value="Bedroom">Bedroom</option>
+            <!-- Add other areas as needed -->
+        </select>
+
+        <label for="problemDescription">Problem Description:</label>
+        <textarea id="problemDescription" name="problemDescription" required></textarea>
+
+        <label for="photoUpload">Photo (optional):</label>
+        <input type="file" id="photoUpload" name="photoUpload">
+
+        <button type="submit">Submit Request</button>
+    </form>
+    <button class="home-button" onclick="window.location.href='loginP3.html'">Home</button>
+
+    <script src="P3scripts.js" type="module" defer></script>
+</body>
+</html>
